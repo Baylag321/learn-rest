@@ -32,7 +32,7 @@ app.use(errorHandler);
 
 const server = app.listen(
   process.env.PORT,
-  console.log(`Express сэрвэр ${process.env.PORT} порт дээр аслаа... `.rainbow)
+  console.log(`Express сэрвэр ${process.env.PORT} порт дээр аслаа... `.cyan)
 );
 
 process.on("unhandledRejection", (err, promise) => {

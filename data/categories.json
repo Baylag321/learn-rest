@@ -1,0 +1,34 @@
+[
+  {
+    "photo": "algorithm.jpg",
+    "_id": "645738a6d6e2f2235a34049e",
+    "name": "Физик",
+    "description": "Физикийн ном",
+    "createdAt": "2023-05-07T05:35:34.921Z",
+    "__v": 0
+  },
+  {
+    "photo": "no-photo.jpg",
+    "_id": "64573cd10e5a34636b464af7",
+    "name": "Програмчлал",
+    "description": "Орчин үеийн програмчлал",
+    "createdAt": "2023-05-07T05:53:21.896Z",
+    "__v": 0
+  },
+  {
+    "photo": "no-photo.jpg",
+    "_id": "64573ced0e5a34636b464afa",
+    "name": "Уран зохиол",
+    "description": "Сонгодог уран зохиол",
+    "createdAt": "2023-05-07T05:53:49.142Z",
+    "__v": 0
+  },
+  {
+    "photo": "no-photo.jpg",
+    "_id": "64573d0e0e5a34636b464afd",
+    "name": "Маркетинг",
+    "description": "Маркетингийн үндэс судлал",
+    "createdAt": "2023-05-07T05:54:22.702Z",
+    "__v": 0
+  }
+]
