@@ -101,3 +101,5 @@
 ::1 - - [07/May/2023:07:47:06 +0000] "GET /api/v1/categories HTTP/1.1" 200 778 "-" "PostmanRuntime/7.32.2"
 ::1 - - [07/May/2023:07:59:28 +0000] "GET /api/v1/categories HTTP/1.1" 200 26 "-" "PostmanRuntime/7.32.2"
 ::1 - - [07/May/2023:07:59:37 +0000] "GET /api/v1/categories HTTP/1.1" 200 778 "-" "PostmanRuntime/7.32.2"
+::1 - - [07/May/2023:08:00:02 +0000] "GET /api/v1/categories HTTP/1.1" 200 778 "-" "PostmanRuntime/7.32.2"
+::1 - - [07/May/2023:08:01:30 +0000] "GET /api/v1/categories HTTP/1.1" 200 778 "-" "PostmanRuntime/7.32.2"
