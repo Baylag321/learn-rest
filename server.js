@@ -11,7 +11,7 @@ const logger = require("./middleware/logger");
 const categoriesRoutes = require("./routes/categories");
 
 // Аппын тохиргоог process.env рүү ачаалах
-dotenv.config({ path: "./config/config.env" });
+dotenv.config({path: "./config/config.env"});
 
 const app = express();
 
@@ -19,25 +19,25 @@ connectDB();
 
 // create a write stream (in append mode)
 var accessLogStream = rfs.createStream("access.log", {
-  interval: "1d", // rotate daily
-  path: path.join(__dirname, "log"),
+    interval: "1d", // rotate daily
+    path: path.join(__dirname, "log"),
 });
 
 // Body parser
 app.use(express.json());
 app.use(logger);
-app.use(morgan("combined", { stream: accessLogStream }));
+app.use(morgan("combined", {stream: accessLogStream}));
 app.use("/api/v1/categories", categoriesRoutes);
 app.use(errorHandler);
 
 const server = app.listen(
-  process.env.PORT,
-  console.log(`Express сэрвэр ${process.env.PORT} порт дээр аслаа... `.cyan)
+    process.env.PORT,
+    console.log(`Express server running on ${process.env.PORT} port`.cyan)
 );
 
 process.on("unhandledRejection", (err, promise) => {
-  console.log(`Алдаа гарлаа : ${err.message}`.underline.red.bold);
-  server.close(() => {
-    process.exit(1);
-  });
+    console.log(`Алдаа гарлаа : ${err.message}`.underline.red.bold);
+    server.close(() => {
+        process.exit(1);
+    });
 });
